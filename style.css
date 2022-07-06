@@ -1,0 +1,42 @@
+.current_time h1{
+  text-align: center;
+}
+.main_body{
+    width: 70%;
+    background-color: aqua;
+    margin: auto;
+    padding-left:15px;
+}
+.set_time input{
+    width: 12%;
+}
+.set_time_div1{
+    width: 75%;
+    display:inline-block;
+}
+.set_time_div2{
+    display: inline-block;
+    width: 20%;
+}
+.set_time_div2 button{
+    background-color: yellow;
+
+}
+.show_alarms{
+    background-color: ;
+}
+.showAlaram{
+  display: inline;
+  width: 50%;
+  margin-right: 170px;
+}
+.showAlaramDelete{
+    display: inline-block;
+    background-color: red;
+    text-align: right;
+    margin-left: 55px;
+}
+.list_of_alarms{
+    padding: 0px;
+    list-style-type: none;
+}

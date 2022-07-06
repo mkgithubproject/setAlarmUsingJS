@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alarm Clock</title>
+</head>
+<body>
+    <div class="main_body">
+        <div class="current_time">
+            <div>
+                <h1 id="clock">03:50:49 PM</h1>
+            </div>
+        </div>
+        <div class="set_time">
+            <form >
+            <div class="set_time_div1">
+               <input type="number" value="00" min="0"
+               max="12" name="hour"><span>:</span>
+               <input type="number" value="00" min="0"
+               max="60" name="min"><span>:</span>
+               <input type="number" value="00" min="0"
+               max="60" name="sec"><span>:</span>
+               <select name="zone" required>
+                <option value="" selected disabled>Zone</option>
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+              </select>
+            </div>
+            <div class="set_time_div2">
+                <button id="set_alarm">Set Alarm</button>
+            </div>
+        </form>
+            
+            
+        </div>
+        <div class="show_alarms">
+            <p>Alarms</p>
+            <ul class="list_of_alarms" id="showAlarms">
+                <!-- To do add list of alarms -->
+                <!-- <li>
+                    <h3 class="showAlaram">04:50:15 AM</h3>
+                    <button class="showAlaramDelete">Delete</button>
+                </li> -->
+            </ul>
+        </div>
+   </div>
+</body>
+<script src="script.js"></script>
+</html>
