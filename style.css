@@ -22,9 +22,6 @@
     background-color: yellow;
 
 }
-.show_alarms{
-    background-color: ;
-}
 .showAlaram{
   display: inline;
   width: 50%;
@@ -40,3 +37,16 @@
     padding: 0px;
     list-style-type: none;
 }
+#clock{
+    background-color: rgb(151, 164, 192);
+    width: 25%;
+    margin-left: 35%;
+    border: 2px solid blue;
+    border-radius: 10px;
+    box-shadow: 2px 5px #888888;
+}
+#clearAlarm{
+    margin-left: 40%;
+    background-color: lightcyan;
+}
+
