@@ -32,7 +32,6 @@ function currentTime() {// function which shows current time
     let session=zone.value;
     let time=hh + ":" + mm + ":" + ss + " " + session;
     listOfAlarms.push(time);
-    document.forms[0].reset();
     showAlarms();
 
   }
@@ -40,7 +39,7 @@ function currentTime() {// function which shows current time
 function ringAlarm(){// ring alarm if set alarm equal to current time
     for(let i=0;i<listOfAlarms.length;i++){
         if (listOfAlarms[i] === time) {
-            window.alert("hello");
+            document.getElementById('audioPlay').play(); 
         }
     }
     setTimeout(function(){ringAlarm(),1000});
@@ -64,6 +63,10 @@ function deleteAlarm(e){// delete alarm
     listOfAlarms.pop(id);
     showAlarms();
 }
+function stopAlarm(){
+    document.getElementById("audioPlay").pause();
+}
 document.forms[0].addEventListener("submit",setAlarm);
+document.getElementById("clearAlarm").addEventListener("click",stopAlarm);
 currentTime();// call function cfor showing current time
 ringAlarm();// ring alarm
